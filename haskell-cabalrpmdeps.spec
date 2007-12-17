@@ -8,7 +8,6 @@ Group: Development/Other
 License: LGPL
 Url: http://nanardon.zarb.org/darcsweb/darcsweb.cgi?r=haskell-CabalRpmDeps;a=summary
 Source: http://hackage.haskell.org/packages/archive/%{module}/%{module}-%{version}.tar.bz2
-BuildRoot: %_tmppath/%name-%version-%release-root
 BuildRequires: ghc
 BuildRequires: haddock
 Provides: haskell(%{module}) = %version
