@@ -2,7 +2,7 @@
 
 Name: haskell-%{module}
 Version: 0.0.3
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Tools to build rpm dependencies from Cabal
 Group: Development/Other
 License: LGPL
