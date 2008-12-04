@@ -1,13 +1,13 @@
 %define module cabalrpmdeps
 
 Name: haskell-%{module}
-Version: 0.0.3
-Release: %mkrel 4
+Version: 0.0.4
+Release: %mkrel 1
 Summary: Tools to build rpm dependencies from Cabal
 Group: Development/Other
 License: LGPL
 Url: http://nanardon.zarb.org/darcsweb/darcsweb.cgi?r=haskell-CabalRpmDeps;a=summary
-Source: http://hackage.haskell.org/packages/archive/%{module}/%{module}-%{version}.tar.bz2
+Source: http://hackage.haskell.org/packages/archive/%{module}/%{module}-%{version}.tar.gz
 BuildRoot: %_tmppath/%name-%version-%release-root
 BuildRequires: ghc
 BuildRequires: haddock
@@ -42,7 +42,7 @@ runhaskell Setup.hs copy --destdir=%{buildroot}
 runhaskell Setup.hs   register --gen-script
 runhaskell Setup.hs unregister --gen-script
 
-rm -fr %{buildroot}/%_datadir/*/doc/
+rm -fr %{buildroot}/%_datadir/*
 
 %triggerin -f   register.sh -- ghc
 %triggerun -f unregister.sh -- ghc
