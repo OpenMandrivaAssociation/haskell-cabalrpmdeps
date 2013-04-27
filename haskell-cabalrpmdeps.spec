@@ -15,10 +15,7 @@ source0: http://hackage.haskell.org/packages/archive/%{module}/%{version}/%{modu
 patch0: cabalrpmdeps-0.0.4.nohaskell98.patch
 BuildRequires: ghc
 BuildRequires: ghc-devel
-buildrequires: haskell-macros
-requires:      haddock
-requires(post): haddock
-requires(preun): haddock
+BuildRequires: haskell-macros
 
 %description
 Tools to build rpm dependencies from Cabal
