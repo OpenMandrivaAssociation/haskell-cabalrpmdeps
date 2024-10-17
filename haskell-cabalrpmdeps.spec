@@ -7,7 +7,7 @@ Release: 13
 Summary: Tools to build rpm dependencies from Cabal
 Group: Development/Other
 License: LGPL
-url: http://hackage.haskell.org/package/%{module}
+url: https://hackage.haskell.org/package/%{module}
 source0: http://hackage.haskell.org/packages/archive/%{module}/%{version}/%{module}-%{version}.tar.gz
 # actualize code for ghc-7.6.1
 # thanks to Roman Cheplyaka:
